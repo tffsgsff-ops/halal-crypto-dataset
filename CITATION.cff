@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+authors:
+  - family-names: "Research Team"
+    given-names: "Halal Crypto Index"
+title: "Institutional AAOIFI Halal Cryptocurrency Dataset (820 Assets)"
+version: 1.0.0
+date-released: 2026-09-28
+url: "https://halalcryptoindex.com"
+repository-code: "https://github.com/tffsgsff-ops/halal-crypto-dataset"
+keywords:
+  - "islamic finance"
+  - "cryptocurrency"
+  - "halal"
+  - "shariah"
+  - "aaoifi"
