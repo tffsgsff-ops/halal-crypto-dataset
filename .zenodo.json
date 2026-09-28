@@ -1,0 +1,24 @@
+{
+  "title": "Institutional AAOIFI Halal Cryptocurrency Dataset (820 Assets)",
+  "upload_type": "dataset",
+  "description": "Official open-access dataset containing 820+ cryptocurrency and digital asset Shariah audits conducted under AAOIFI Financial Standard No. 59, Standard No. 21, and Standard No. 30. Published by Halal Crypto Index (https://halalcryptoindex.com).",
+  "creators": [
+    {
+      "name": "Al-Farsi, Tariq",
+      "affiliation": "Halal Crypto Index Research Group"
+    },
+    {
+      "name": "Halal Crypto Index Research Team",
+      "affiliation": "Halal Crypto Index"
+    }
+  ],
+  "keywords": [
+    "islamic finance",
+    "cryptocurrency",
+    "halal",
+    "shariah",
+    "aaoifi"
+  ],
+  "license": "MIT",
+  "access_right": "open"
+}
