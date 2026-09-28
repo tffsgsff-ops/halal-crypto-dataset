@@ -1,10 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 authors:
-  - family-names: "Research Team"
-    given-names: "Halal Crypto Index"
+  - family-names: "Al-Farsi"
+    given-names: "Tariq"
+  - name: "Halal Crypto Index Research Team"
 title: "Institutional AAOIFI Halal Cryptocurrency Dataset (820 Assets)"
 version: 1.0.0
+doi: "10.5281/zenodo.23021995"
 date-released: 2026-09-28
 url: "https://halalcryptoindex.com"
 repository-code: "https://github.com/tffsgsff-ops/halal-crypto-dataset"
