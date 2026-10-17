@@ -1,0 +1,49 @@
+{
+  "serverInfo": {
+    "name": "halal-crypto",
+    "version": "1.0.0"
+  },
+  "tools": [
+    {
+      "name": "check_shariah_compliance",
+      "description": "Check if a cryptocurrency is Halal or Haram under AAOIFI Shariah standards (No. 59 and No. 21). Returns compliance status, scholarly justification, category, and audit link.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ticker_or_name": {
+            "type": "string",
+            "description": "The cryptocurrency symbol or name (e.g. BTC, Bitcoin, KAS, SOL, AAVE)"
+          }
+        },
+        "required": ["ticker_or_name"]
+      }
+    },
+    {
+      "name": "get_halal_index_summary",
+      "description": "Get institutional statistics and methodology summary for the Halal Crypto Index (820 audited assets, AAOIFI standard, CERN Zenodo DOI).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "list_halal_coins",
+      "description": "List verified Halal cryptocurrencies filtered by optional category.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "Optional category filter (e.g. Layer 1, Store of Value)"
+          },
+          "limit": {
+            "type": "number",
+            "description": "Maximum coins to return"
+          }
+        }
+      }
+    }
+  ],
+  "resources": [],
+  "prompts": []
+}
