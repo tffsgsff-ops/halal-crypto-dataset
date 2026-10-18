@@ -1,7 +1,7 @@
 {
   "serverInfo": {
-    "name": "halal-crypto",
-    "version": "1.0.0"
+    "name": "halal-crypto-mcp",
+    "version": "1.0.1"
   },
   "tools": [
     {
@@ -15,7 +15,9 @@
             "description": "The cryptocurrency symbol or name (e.g. BTC, Bitcoin, KAS, SOL, AAVE)"
           }
         },
-        "required": ["ticker_or_name"]
+        "required": [
+          "ticker_or_name"
+        ]
       }
     },
     {
@@ -28,22 +30,47 @@
     },
     {
       "name": "list_halal_coins",
-      "description": "List verified Halal cryptocurrencies filtered by optional category.",
+      "description": "List verified Halal cryptocurrencies filtered by optional category (e.g. Layer 1, Store of Value).",
       "inputSchema": {
         "type": "object",
         "properties": {
           "category": {
             "type": "string",
-            "description": "Optional category filter (e.g. Layer 1, Store of Value)"
+            "description": "Optional category filter"
           },
           "limit": {
             "type": "number",
-            "description": "Maximum coins to return"
+            "description": "Maximum coins to return (default 20, max 100)"
           }
         }
       }
     }
   ],
-  "resources": [],
-  "prompts": []
+  "resources": [
+    {
+      "uri": "halal://methodology",
+      "name": "AAOIFI Screening Methodology",
+      "mimeType": "text/markdown",
+      "description": "Comprehensive AAOIFI Shariah standard digital asset evaluation rules"
+    },
+    {
+      "uri": "halal://assets",
+      "name": "820+ Audited Assets Dataset",
+      "mimeType": "application/json",
+      "description": "Complete dataset of 820+ audited digital assets with compliance statuses"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "audit_crypto_portfolio",
+      "description": "Prompts the model to audit a list of cryptocurrency holdings against AAOIFI Shariah standards",
+      "arguments": [
+        {
+          "name": "holdings",
+          "description": "Comma-separated list of cryptocurrency tickers (e.g. BTC, ETH, SOL, USDE, AAVE)",
+          "required": true
+        }
+      ]
+    }
+  ]
 }
