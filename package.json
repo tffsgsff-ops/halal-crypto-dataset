@@ -1,0 +1,29 @@
+{
+  "name": "halal-crypto-mcp",
+  "version": "1.0.1",
+  "description": "Official Model Context Protocol (MCP) server for Halal Crypto Index. Query AAOIFI Shariah compliance for 820+ crypto assets.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "halal-crypto-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "claude-desktop",
+    "islamic-finance",
+    "halal-crypto",
+    "aaoifi",
+    "shariah",
+    "cryptocurrency"
+  ],
+  "author": "Halal Crypto Index Research Group",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  }
+}
